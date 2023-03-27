@@ -7,7 +7,7 @@
 
 **For bugs in the template code:** create an Issue
 
-**For feature requests:** this repo is not accepting feature requests, you can discuss potential features in [Discord Project Post](https://discord.com/channels/974519864045756446/1055336272543092757)
+**For feature requests:** this repo is not accepting feature requests.
 
 **For PRs:** only bug fix PRs wil be accepted. If you are implementing a new feature, please fork this repo.
 
@@ -16,11 +16,9 @@ Thank you!
 ---
 # GPT Discord Bot
 
-Example Discord bot written in Python that uses the [completions API](https://beta.openai.com/docs/api-reference/completions) to have conversations with the `text-davinci-003` model, and the [moderations API](https://beta.openai.com/docs/api-reference/moderations) to filter the messages.
+Example Discord bot written in Python that uses the [completions API](https://beta.openai.com/docs/api-reference/completions) to have conversations with the `gpt-3.5-turbo` or `gpt-4` model.
 
-**THIS IS NOT CHATGPT.**
-
-This bot uses the [OpenAI Python Library](https://github.com/openai/openai-python) and [discord.py](https://discordpy.readthedocs.io/).
+This bot uses the [OpenAI Python Library](https://github.com/openai/openai-python),  [discord.py](https://discordpy.readthedocs.io/) and is based on the [original GPT-3 of OpenAI](https://github.com/openai/gpt-discord-bot)
 
 
 # Features
@@ -30,7 +28,7 @@ This bot uses the [OpenAI Python Library](https://github.com/openai/openai-pytho
 - The entire thread will be passed to the model for each request, so the model will remember previous messages in the thread
 - when the context limit is reached, or a max message count is reached in the thread, bot will close the thread
 - you can customize the bot instructions by modifying `config.yaml`
-- you can change the model, the hardcoded value is `text-davinci-003`
+- you can change the model (e.g. `gpt-3.5-turbo` or `gpt-4`) in the environment variables
 
 # Setup
 
