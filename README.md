@@ -16,11 +16,9 @@ Thank you!
 ---
 # GPT Discord Bot
 
-Example Discord bot written in Python that uses the [completions API](https://beta.openai.com/docs/api-reference/completions) to have conversations with the `gpt-4` model, and the [moderations API](https://beta.openai.com/docs/api-reference/moderations) to filter the messages.
+Example Discord bot written in Python that uses the [completions API](https://beta.openai.com/docs/api-reference/completions) to have conversations with the `gpt-3.5-turbo` or `gpt-4` model.
 
-**THIS IS NOT CHATGPT.**
-
-This bot uses the [OpenAI Python Library](https://github.com/openai/openai-python) and [discord.py](https://discordpy.readthedocs.io/).
+This bot uses the [OpenAI Python Library](https://github.com/openai/openai-python),  [discord.py](https://discordpy.readthedocs.io/) and is based on the [original GPT-3 of OpenAI](https://github.com/openai/gpt-discord-bot)
 
 
 # Features
@@ -30,7 +28,7 @@ This bot uses the [OpenAI Python Library](https://github.com/openai/openai-pytho
 - The entire thread will be passed to the model for each request, so the model will remember previous messages in the thread
 - when the context limit is reached, or a max message count is reached in the thread, bot will close the thread
 - you can customize the bot instructions by modifying `config.yaml`
-- you can change the model, the hardcoded value is `gpt-4`
+- you can change the model (e.g. `gpt-3.5-turbo` or `gpt-4`) in the environment variables
 
 # Setup
 
